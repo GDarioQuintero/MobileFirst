@@ -6,7 +6,7 @@ FORMA DE COMO DEBEN IR ORGANIZADOS LOS ESTILOS
 4. Visuales
 5. Otros
 */
-/*ESTILOS BASE-----------------------------------------*/
+/*ESTILOS BASE--------------------------------------------*/
 :root{
     /*Colores*/
     --bitcoin-orange: #F7931A;
@@ -28,7 +28,7 @@ html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
-/*-------------------------------------------------------*/
+/*ESTILOS DEL HEADER---------------------------------------*/
 header{
     position: relative;
     display: flex;
@@ -95,11 +95,13 @@ header img{
     margin-left: 10px;
     background-image: url('../assets/icons/vector-black-down.svg');
 }
+/*ESTILOS DEL MAIN---------------------------------------------------------*/
 main{
     width: 100%;
     height: auto;/*Va cresiendo a la medida que crece el contenido*/
     background-color: var(--off-white);
 }
+/*ESTILOS DE LA SECCION INTERCAMBIO*/
 .main-exchange-container{
     width: 100%;
     height: auto;
@@ -154,6 +156,7 @@ clases teniendo en cuenta la gerarquia*/
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
     text-align: left;
+    padding-left: 20px;/*Se lo agrege yo*/
 }
 .currency-table__container{
     width: 90%;
@@ -172,4 +175,142 @@ clases teniendo en cuenta la gerarquia*/
     line-height: 1.9rem;
     color: var(--grey);
     background-color: var(--just-white);
+    padding-left: 15px;/*Se lo agrege yo*/
+    text-align: left;/*Se lo agrege yo*/
+}
+/*A la etiqueta tabla, no se visualiza el border radius, por eso se le aplica 
+este estilo a las celdas de las esquinas de la siguiente manera*/
+.currency-table__container .table--top-left{
+    border-radius: 15px 0 0 0;
+}
+.currency-table__container .table--top-right{
+    border-radius: 0 15px 0 0;
+}
+.currency-table__container .table--bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.currency-table__container .table--bottom-right{
+    border-radius: 0 0 15px 0;
+}
+.currency-table__container .table--right{
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currency-table__container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/trending-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.currency-table__container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/trending-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.currency-table__date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    align-content: center;
+    border-radius: 8px;
+}
+.currency-table__date p{
+    font-size: 1.2rem;  
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);     
+}
+/*------------------------------------------*/
+.main-comisiones-table{
+    width: 70%;/*No ocupa toda la pantalla*/
+    min-width: 235px;/*Para asegurar que no se aga mas pequeña de 235px*/
+    max-width: 500px;/*No cresca mas de 500px*/
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+/*Para mayor especificidad y evitar conflictos es recomendable invocar varias
+clases teniendo en cuenta la gerarquia*/
+.main-comisiones-table .comisiones-table__title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secundary-blue);
+    text-align: left;
+    padding-left: 20px;/*Se lo agrege yo*/
+}
+.comisiones-table__container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.comisiones-table__container table{
+    width: 100%;
+    height: 100%;}
+.comisiones-table__container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+    padding-left: 15px;/*Se lo agrege yo*/
+    text-align: left;/*Se lo agrege yo*/
+}
+/*A la etiqueta tabla, no se visualiza el border radius, por eso se le aplica 
+este estilo a las celdas de las esquinas de la siguiente manera*/
+.comisiones-table__container .table--top-left{
+    border-radius: 15px 0 0 0;
+}
+.comisiones-table__container .table--top-right{
+    border-radius: 0 15px 0 0;
+}
+.comisiones-table__container .table--bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.comisiones-table__container .table--bottom-right{
+    border-radius: 0 0 15px 0;
+}
+.comisiones-table__container .table--right{
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.comisiones-table__date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    align-content: center;
+    border-radius: 8px;
+}
+.comisiones-table__date p{
+    font-size: 1.2rem;  
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: var(--warm-black);     
 }
