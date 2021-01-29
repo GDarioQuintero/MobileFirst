@@ -358,7 +358,7 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -417,4 +417,22 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 70vh;
+    background-image: url('../assets/imgs/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;/*Me centra texto en este contenedor - Centra el h2*/
+}
+.bitcoin-img-container h2{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 2.4rem;  
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white)
 }
