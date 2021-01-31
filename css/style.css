@@ -139,12 +139,21 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    display: flex;
+    min-height: 300px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table{
+    position: relative;
+    scroll-snap-align: center;
     width: 70%;/*No ocupa toda la pantalla*/
     min-width: 235px;/*Para asegurar que no se aga mas pequeña de 235px*/
     max-width: 500px;/*No cresca mas de 500px*/
     height: 360px;
-    margin: 0 auto;
+    margin: 0 30px;
     font-family: "Inter", sans-serif;
 }
 /*Para mayor especificidad y evitar conflictos es recomendable invocar varias
@@ -237,11 +246,13 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     color: var(--warm-black);     
 }
 .main-comisiones-table{
+    position: relative;
+    scroll-snap-align: center;
     width: 70%;/*No ocupa toda la pantalla*/
     min-width: 235px;/*Para asegurar que no se aga mas pequeña de 235px*/
     max-width: 500px;/*No cresca mas de 500px*/
     height: 360px;
-    margin: 0 auto;
+    margin: 0 30px;
     font-family: "Inter", sans-serif;
 }
 /*Para mayor especificidad y evitar conflictos es recomendable invocar varias
