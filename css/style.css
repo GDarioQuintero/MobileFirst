@@ -236,7 +236,6 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     font-weight: 300;
     color: var(--warm-black);     
 }
-/*------------------------------------------*/
 .main-comisiones-table{
     width: 70%;/*No ocupa toda la pantalla*/
     min-width: 235px;/*Para asegurar que no se aga mas pequeña de 235px*/
@@ -473,15 +472,16 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    padding: 10px 0;
 }
 .plans-container__card{
     position: relative;
     scroll-snap-align: center;/*Aliniar el elemento en elcento*/
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
-    min-height: 250px;
-    margin: 50px 10px 0;
+    min-height: 230px;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -499,13 +499,12 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     background-color: var(--bitcoin-orange);
     color: var(--just-white);  
 }
-.plans-info-container .plans-card__title{
+.plans-card__title{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: black;
-
 }
 .plans-card__price{
     padding: 5px 0;
@@ -546,4 +545,31 @@ este estilo a las celdas de las esquinas de la siguiente manera*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+/*SECCION DEL FOOTER ------------------------------------*/
+footer{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    min-height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container__link ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.footer-container__link li{
+    margin: 10px 0px;
+}
+.footer-container__link a{
+    text-decoration: none;
+    color: var(--just-white);
 }
